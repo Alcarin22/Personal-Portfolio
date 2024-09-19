@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A structured of a simple web with some pages like, projects, contact and articles, without styles">
+    <meta name="keywords" content="Web, Website, simple, basicm, projects, articles, contact, Frontend Developer, Web Development">
+    <meta name="author" content="David Díaz Guerra">
+
+    <meta property="og:title" content="David Díaz Guerra - Junior Frontend Developer CV">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/cv">
+    <meta property="og:image" content="https://yourwebsite.com/images/your-photo.jpg">
+    <meta property="og:description" content="Explore the website  of David Díaz, a skilled Junior Frontend Developer with experience in HTML, CSS, JavaScript, and more.">
+    <meta property="og:site_name" content="David Díaz's simple site">
+    <title>Contact - Basic HTML Website </title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header__content">
+        <div class="header__logo">
+            <img class="logo__logo" src="assets/img/favicon.png" alt="Logo Alcarin22" width="50px">
+            <h3 class="logo_title">David D&iacute;az</h3>
+        </div>
+        <nav class="header__navbar">
+            <ul class="navbar__navbar">
+                <li class="navbar__element"><a class="navbar__link" href="../index.html">Home</a></li>
+                <li class="navbar__element"><a class="navbar__link" href="projects.html">Projects</a></li>
+                <li class="navbar__element"><a class="navbar__link" href="articles.html">articles</a></li>
+                <li class="navbar__element"><a class="navbar__link" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main__content">
+        <section class="content__information">
+            <div class="information__name">
+                <p class="name__text"><b>Name</b></p>
+                <p class="name__data">David Díaz Guerra</p>
+            </div>
+            <div class="information__tlf"></div>
+                <p class="tlf__text"><b>Telephone</b></p>
+                <p class="tlf__data">655-20-81-87</p>
+            </div>
+            <div class="information__email"></div>
+                <p class="email__text"><b>Email</b></p>
+                <p class="email__data">daviddiaz1992@gmail.com</p>
+            </div>
+            <form action="#" method="post">
+                <fieldset class="form__data">
+                    <label for="form__input-name" class="form__name">Nombre:</label>
+                    <input type="text" name="form__input-name" id="form__input-name">
+                </fieldset>
+                <fieldset class="form__data">
+                    <label for="form__input-mail" class="form__mail">Email:</label>
+                    <input type="text" name="form__input-mail" id="form__input-mail">
+                </fieldset>
+                <fieldset class="form__data">
+                    <label for="form__input-message" class="form__message">Message:</label>
+                    <textarea id="form__message" name="form__message" rows="5" required></textarea>
+                </fieldset>
+                <button type="submit" class="form__submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
