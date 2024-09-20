@@ -32,5 +32,6 @@ Use [Google Fonts](https://fonts.google.com) to enhance the typography of your w
 Host the website for free in sevices like [Vercel](https://vercel.com/), [GitHub Pages](https://pages.github.com/) or [Cloudfare Pages](https://pages.cloudflare.com/)
 
 3. **Support for Dark Mode**
+Add suppport for dark mode using variables
 
 ## [Project URL](https://roadmap.sh/projects/portfolio-website)
