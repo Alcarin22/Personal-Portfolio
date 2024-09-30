@@ -14,28 +14,41 @@
     <meta property="og:description" content="Explore the website  of David Díaz, a skilled Junior Frontend Developer with experience in HTML, CSS, JavaScript, and more.">
     <meta property="og:site_name" content="David Díaz's simple site">
     <title>Index - Basic HTML Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    <header class="header__content">
-        <div class="header__logo">
-            <img class="logo__logo" src="assets/img/favicon.png" alt="Logo Alcarin22" width="50px">
-            <h3 class="logo_title">David D&iacute;az</h3>
+<header class="header__content">
+    <div class="header__logo">
+        <img class="logo__logo" src="assets/img/favicon.png" alt="Logo Alcarin22">
+        <h3 class="logo__title">David D&iacute;az</h3>
+    </div>
+    <nav class="header__navbar">
+        <ul class="navbar__navbar">
+            <li class="navbar__element"><a class="navbar__link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="navbar__element"><a class="navbar__link" href="pages/projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li class="navbar__element"><a class="navbar__link" href="pages/articles.html"><i class="fas fa-newspaper"></i> Articles</a></li>
+            <li class="navbar__element"><a class="navbar__link" href="pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+    <!--<button id="theme-toggle" class="theme-toggle">Modo Oscuro</button>-->
+    <label class="ui-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <div class="slider">
+            <div class="circle"></div>
         </div>
-        <nav class="header__navbar">
-            <ul class="navbar__navbar">
-                <li class="navbar__element"><a class="navbar__link" href="index.html">Home</a></li>
-                <li class="navbar__element"><a class="navbar__link" href="pages/projects.html">Projects</a></li>
-                <li class="navbar__element"><a class="navbar__link" href="pages/articles.html">articles</a></li>
-                <li class="navbar__element"><a class="navbar__link" href="pages/contact.html">contact</a></li>
-            </ul>
-        </nav>
+    </label>    
+</header>
+
+    <main class="main__content">
         <hgroup class="header__hgroup">
             <h1 class="hgroup__title">FRONTEND DEVELOPER</h1>
             <h2 class="hgroup__subtitle">Built solutions for everythinks</h2>
         </hgroup>
-    </header>
-    <main class="main__content">
+    <div class="content__page">
         <aside class="main__aside-menu">
             <h4 class="aside-menu__title">Projects</h4>
             <ul class="aside-menu__navbar">
@@ -55,47 +68,48 @@
             </article>
             <article class="section__articles">
                 <h4 class="articles__title">OpenSource Work</h4>
-                <p class="articles__text">Contributed to 50 open-source projects. Made my own projects with 200 GitHub Stars.</p>
+                <p class="articles__text articles__OW">Contributed to 50 open-source projects. Made my own projects with 200 GitHub Stars.</p>
                 <a href="https://github.com/Alcarin22" class="articles__link">Visit my GitHub profile</a>
             </article>
         </section>
         <section class="main__section">
             <article class="section__articles">
                 <h4 class="articles__title">Education</h4>
-                <p>Undergraduate in Computer Science, studies included the following:</p>
-                  <ul>
-                    <li>Object Oriented Programming</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Web Engineering</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Human-Computer Interaction</li>
-                    <li>Computer Graphics</li>
-                    <li>Database Management Systems</li>
-                    <li>Distributed Database Systems</li>
-                    <li>Discrete Mathematics</li>
+                <p class="article__text-education">Undergraduate in Computer Science, studies included the following:</p>
+                  <ul class="article__education-list">
+                    <li class="article__education-element">Object Oriented Programming</li>
+                    <li class="article__education-element">Data Structures and Algorithms</li>
+                    <li class="article__education-element">Web Engineering</li>
+                    <li class="article__education-element">Artificial Intelligence</li>
+                    <li class="article__education-element">Human-Computer Interaction</li>
+                    <li class="article__education-element">Computer Graphics</li>
+                    <li class="article__education-element">Database Management Systems</li>
+                    <li class="article__education-element">Distributed Database Systems</li>
+                    <li class="article__education-element">Discrete Mathematics</li>
                   </ul>
             </article>
         </section>
         <section class="main__section">
             <article class="articles__reviews">
-                <h4 class="review__title">Opinions</h4>
+                <h4 class="articles__title">Opinions</h4>
                 <div class="articles__review">
-                    <p class="review__coment">John Doe was a brilliant student; always stood out with his assignments.</p>
-                    <address class="review__author">Jane Doe, Assistant Professor</address>
+                    <address class="review__coment">John Doe was a brilliant student; always stood out with his assignments.</address>
+                    <p class="review__author">Jane Doe, Assistant Professor</p>
                 </div>
                 <div class="articles__review">
-                    <p class="review__coment">John Doe was a brilliant student; always stood out with his assignments.</p>
-                    <address class="review__author">Jane Doe, Assistant Professor</address>
+                    <address class="review__coment">John Doe was a brilliant student; always stood out with his assignments.</address>
+                    <p class="review__author">Jane Doe, Assistant Professor</p>
                 </div>
                 <div class="articles__review">
-                    <p class="review__coment">John Doe was a brilliant student; always stood out with his assignments.</p>
-                    <address class="review__author">Jane Doe, Assistant Professor</address>
+                    <address class="review__coment">John Doe was a brilliant student; always stood out with his assignments.</address>
+                    <p class="review__author">Jane Doe, Assistant Professor</p>
                 </div>
             </article>
         </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; All rights reserved 2024</p>
+    <footer class="footer__content">
+        <p class="footer__text">&copy; All rights reserved 2024</p>
     </footer>
 </body>
 </html>
